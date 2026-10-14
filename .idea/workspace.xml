@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="775c060b-4576-476c-80bd-b25ad8a3d913" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/database/database.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GestionCabinetMedical/tn/enicarthage/cabinetMedical/config/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GestionCabinetMedical/tn/enicarthage/cabinetMedical/config/DatabaseConnection.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,13 @@
     "accountId": "bbef95f7-af7a-463a-8c1f-88bce9a515f8"
   }
 }]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
@@ -135,6 +143,12 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\WSI\IdeaProjects\GestionCabinetMedical\backendgestionCabinetMedical\src\main\ressources" />
+      <recent name="C:\Users\WSI\IdeaProjects\GestionCabinetMedical\backendgestionCabinetMedical\src\main\java" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="backendGestionCabinetMedical" />

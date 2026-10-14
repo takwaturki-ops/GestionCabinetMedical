@@ -1,3 +1,15 @@
+
+DROP DATABASE IF EXISTS gestion_cabinet;
+
+
+CREATE DATABASE gestion_cabinet;
+
+
+USE gestion_cabinet;
+
+
+
+
 CREATE TABLE fiche_patient (
     id INT AUTO_INCREMENT PRIMARY KEY,
     patient_id INT NOT NULL UNIQUE,

@@ -15,11 +15,41 @@
     </properties>
 
     <dependencies>
-        <dependency>
-             <groupId>org.mariadb.jdbc</groupId>
-             <artifactId>mariadb-java-client</artifactId>
-             <version>3.5.9</version>
-        </dependency>
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>9.5.0</version>
+            </dependency>
     </dependencies>
+
+
+
+    <profiles>
+        <profile>
+            <id>db_init</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>3.9.16</version>
+                        <executions>
+                            <execution>
+                                <id>initialize-database</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>java</goal>
+                                </goals>
+                                <configuration>
+                                    <mainClass>tn.enicarthage.gestiontache.config.DatabaseConnection</mainClass>
+                                    <classpathScope>runtime</classpathScope>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>
