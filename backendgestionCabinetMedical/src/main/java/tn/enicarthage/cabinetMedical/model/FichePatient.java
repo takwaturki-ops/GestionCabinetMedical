@@ -1,77 +1,39 @@
 package tn.enicarthage.cabinetMedical.model;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class FichePatient {
     private int id;
-    private LocalDate dateCreation;
+    private LocalDate date;
     private String groupeSanguin;
     private String allergie;
     private String traitementEnCours;
     private String antecedants;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
-    public FichePatient(){}
-    //il faut ajouter les att concernant la classe patient!!!!!!!!<<<<3333
-    public FichePatient(
-            int id,
-            LocalDate dateCreation,
-            String groupeSanguin,
-            String allergie,
-            String traitementEnCours,
-            String antecedants
-    ){this.id = id;
-        this.dateCreation = dateCreation;
-        this.groupeSanguin = groupeSanguin;
-        this.allergie = allergie;
-        this.traitementEnCours = traitementEnCours;
-        this.antecedants = antecedants;
-    }
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public LocalDate getDate() { return date; }
+    public void setDate(LocalDate date) { this.date = date; }
 
-    public LocalDate getDateCreation() {
-        return dateCreation;
-    }
+    public String getGroupeSanguin() { return groupeSanguin; }
+    public void setGroupeSanguin(String groupeSanguin) { this.groupeSanguin = groupeSanguin; }
 
-    public void setDateCreation(LocalDate dateCreation) {
-        this.dateCreation = dateCreation;
-    }
+    public String getAllergie() { return allergie; }
+    public void setAllergie(String allergie) { this.allergie = allergie; }
 
-    public String getGroupeSanguin() {
-        return groupeSanguin;
-    }
+    public String getTraitementEnCours() { return traitementEnCours; }
+    public void setTraitementEnCours(String traitementEnCours) { this.traitementEnCours = traitementEnCours; }
 
-    public void setGroupeSanguin(String groupeSanguin) {
-        this.groupeSanguin = groupeSanguin;
-    }
+    public String getAntecedants() { return antecedants; }
+    public void setAntecedants(String antecedants) { this.antecedants = antecedants; }
 
-    public String getAllergie() {
-        return allergie;
-    }
+    public LocalDateTime getCreatedAt() { return createdAt; }
+    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 
-    public void setAllergie(String allergie) {
-        this.allergie = allergie;
-    }
-
-    public String getTraitementEnCours() {
-        return traitementEnCours;
-    }
-
-    public void setTraitementEnCours(String traitementEnCours) {
-        this.traitementEnCours = traitementEnCours;
-    }
-
-    public String getAntecedants() {
-        return antecedants;
-    }
-
-    public void setAntecedants(String antecedants) {
-        this.antecedants = antecedants;
-    }
+    public LocalDateTime getUpdatedAt() { return updatedAt; }
+    public void setUpdatedAt(LocalDateTime updatedAt) { this.updatedAt = updatedAt; }
 }
-

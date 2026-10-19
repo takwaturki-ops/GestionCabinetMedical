@@ -43,7 +43,8 @@ public final class DatabaseConnection {
     public static void main(String[] args) {
 
         Path databaseScript = Paths.get(
-                "src", "main", "resources", "database.sql"
+                "backendgestionCabinetMedical",
+                "src", "main", "ressources", "database", "database.sql"
         );
 
         try {
